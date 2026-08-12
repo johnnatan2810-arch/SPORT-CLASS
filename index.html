@@ -4,99 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sport Class | Fútbol, estilo y pasión</title>
-
-    <meta
-        name="description"
-        content="Sport Class - Camisetas de fútbol, modelos retro, selecciones y guayos."
-    >
+    <title>Sport Class | Camisetas y Guayos de Fútbol</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Iconos -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
 </head>
 
 <body>
 
-<!-- =====================================================
-     FONDO DECORATIVO
-===================================================== -->
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
 
-<div class="fondo-luz fondo-luz-1"></div>
-<div class="fondo-luz fondo-luz-2"></div>
+<nav>
 
+    <div class="menu">
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
-
-<nav class="navbar">
-
-    <div class="navbar-contenido">
-
-        <a href="#inicio" class="logo">
-
-            <span class="logo-icono">
-                <i class="fa-solid fa-futbol"></i>
-            </span>
-
-            <span class="logo-texto">
-                SPORT<span>CLASS</span>
-            </span>
-
-        </a>
-
-
-        <div class="menu">
-
-            <a href="#inicio">
-                <i class="fa-solid fa-house"></i>
-                <span>Inicio</span>
-            </a>
-
-            <a href="#nosotros">
-                <i class="fa-solid fa-circle-info"></i>
-                <span>Nosotros</span>
-            </a>
-
-            <a href="#catalogo">
-                <i class="fa-solid fa-layer-group"></i>
-                <span>Catálogo</span>
-            </a>
-
-            <a href="#productos">
-                <i class="fa-solid fa-shirt"></i>
-                <span>Camisetas</span>
-            </a>
-
-            <a href="#guayos">
-                <i class="fa-solid fa-shoe-prints"></i>
-                <span>Guayos</span>
-            </a>
-
+        <div class="logo">
+            SPORT <span>CLASS</span>
         </div>
 
+        <a href="#inicio">INICIO</a>
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="#catalogo">CATÁLOGO</a>
+        <a href="#productos">CAMISETAS</a>
+        <a href="#guayos">GUAYOS</a>
 
         <button
             class="boton-carrito"
             id="boton-carrito"
             type="button"
         >
-
-            <i class="fa-solid fa-bag-shopping"></i>
-
-            <span class="texto-carrito">
-                Carrito
-            </span>
-
-            <span id="contador-carrito">
-                0
-            </span>
-
+            🛒 Carrito
+            <span id="contador-carrito">0</span>
         </button>
 
     </div>
@@ -104,105 +43,38 @@
 </nav>
 
 
+<!-- =========================================================
+     INICIO
+========================================================= -->
 
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section
-    class="seccion inicio"
-    id="inicio"
->
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-circulo hero-circulo-1"></div>
-    <div class="hero-circulo hero-circulo-2"></div>
-
+<section class="seccion inicio" id="inicio">
 
     <div class="inicio-contenido">
 
-        <div class="hero-etiqueta">
-            <span></span>
-            FÚTBOL · ESTILO · PASIÓN
-            <span></span>
-        </div>
+        <h1>SPORT</h1>
+        <h2>CLASS</h2>
 
-
-        <h1>
-            VISTE
-            <span>LA PASIÓN</span>
-        </h1>
-
-
-        <p class="hero-texto">
-
-            Camisetas, modelos retro y guayos
-            para quienes viven el fútbol
-            dentro y fuera de la cancha.
-
+        <p>
+            Viste los colores de tu equipo.
+            Camisetas de fútbol, selecciones,
+            equipos, modelos retro y guayos.
         </p>
 
-
-        <div class="hero-botones">
-
-            <a
-                href="#productos"
-                class="boton-principal"
-            >
-                <i class="fa-solid fa-shirt"></i>
-                VER CAMISETAS
-            </a>
-
-
-            <a
-                href="#catalogo"
-                class="boton-secundario"
-            >
-                EXPLORAR CATÁLOGO
-                <i class="fa-solid fa-arrow-down"></i>
-            </a>
-
-        </div>
-
-
-        <div class="hero-datos">
-
-            <div>
-                <strong>+30</strong>
-                <span>Modelos</span>
-            </div>
-
-            <div>
-                <strong>6+</strong>
-                <span>Mayorista</span>
-            </div>
-
-            <div>
-                <strong>100%</strong>
-                <span>Pasión</span>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="hero-scroll">
-
-        <span>DESLIZA</span>
-
-        <i class="fa-solid fa-arrow-down"></i>
+        <a
+            href="#productos"
+            class="boton-principal"
+        >
+            VER CAMISETAS
+        </a>
 
     </div>
 
 </section>
 
 
-
-<!-- =====================================================
+<!-- =========================================================
      NOSOTROS
-===================================================== -->
+========================================================= -->
 
 <section
     class="seccion nosotros"
@@ -211,112 +83,213 @@
 
     <div class="contenedor">
 
-        <div class="titulo-seccion">
+        <div class="nosotros-grid">
 
-            <span class="titulo-mini">
-                NUESTRA HISTORIA
-            </span>
+            <!-- LADO IZQUIERDO -->
 
-            <h2>
-                MÁS QUE UNA
-                <span>CAMISETA</span>
-            </h2>
+            <div class="nosotros-izquierda">
 
-            <div class="linea-titulo"></div>
+                <span class="etiqueta">
+                    SPORT CLASS
+                </span>
 
-        </div>
+                <h2>
+                    NUESTRA
+                    <span>HISTORIA</span>
+                </h2>
 
+                <div class="linea-azul"></div>
 
-        <div class="nosotros-layout">
-
-            <div class="nosotros-historia">
-
-                <div class="numero-historia">
-                    01
-                </div>
-
-                <h3>
-                    Nacimos por amor al fútbol
-                </h3>
-
-                <p>
-                    Sport Class nació con una idea sencilla:
-                    hacer que cualquier persona pudiera
-                    llevar los colores de su equipo con
-                    orgullo y estilo.
+                <p class="frase-marca">
+                    FÚTBOL.
+                    <span>PASIÓN.</span>
+                    ESTILO.
                 </p>
 
-                <p>
-                    Empezamos con la pasión por las camisetas
-                    y poco a poco fuimos construyendo un
-                    catálogo pensado para quienes disfrutan
-                    tanto del fútbol actual como de las
-                    historias que quedaron para siempre.
+                <p class="nosotros-texto">
+                    En Sport Class vivimos el fútbol
+                    como una pasión. Creamos este espacio
+                    para que puedas encontrar las camisetas
+                    de tus equipos y selecciones favoritas,
+                    desde los modelos actuales hasta las
+                    camisetas retro que marcaron historia.
                 </p>
 
-                <p>
-                    Hoy seguimos creciendo con una meta clara:
-                    ofrecer variedad, buenos precios y una
-                    experiencia de compra sencilla.
+                <p class="nosotros-texto">
+                    Queremos ofrecerte variedad, buenos
+                    precios y una experiencia sencilla para
+                    que puedas elegir tus prendas, agregarlas
+                    al carrito y realizar tu pedido directamente
+                    desde nuestra página.
                 </p>
 
             </div>
 
 
-            <div class="nosotros-panel">
+            <!-- LADO DERECHO -->
 
-                <div class="nosotros-linea"></div>
+            <div class="valores">
 
+                <div class="valor">
 
-                <div class="nosotros-item">
-
-                    <div class="nosotros-icono">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="valor-icono">
+                        ⚽
                     </div>
 
                     <div>
-                        <h3>Pasión</h3>
+
+                        <h3>
+                            PASIÓN
+                        </h3>
+
                         <p>
-                            El fútbol es el punto de partida
-                            de todo lo que hacemos.
+                            El fútbol es nuestra inspiración
+                            y la razón detrás de Sport Class.
                         </p>
+
                     </div>
 
                 </div>
 
 
-                <div class="nosotros-item">
+                <div class="valor">
 
-                    <div class="nosotros-icono">
-                        <i class="fa-solid fa-shirt"></i>
+                    <div class="valor-icono">
+                        👕
                     </div>
 
                     <div>
-                        <h3>Variedad</h3>
+
+                        <h3>
+                            VARIEDAD
+                        </h3>
+
                         <p>
-                            Equipos, selecciones y camisetas
-                            retro para diferentes estilos.
+                            Equipos colombianos, América,
+                            Europa, selecciones y modelos retro.
                         </p>
+
                     </div>
 
                 </div>
 
 
-                <div class="nosotros-item">
+                <div class="valor">
 
-                    <div class="nosotros-icono">
-                        <i class="fa-solid fa-bolt"></i>
+                    <div class="valor-icono">
+                        📦
                     </div>
 
                     <div>
-                        <h3>Experiencia</h3>
+
+                        <h3>
+                            TU PEDIDO
+                        </h3>
+
                         <p>
-                            Una página pensada para comprar
-                            fácilmente desde cualquier dispositivo.
+                            Elige tus productos, selecciona
+                            la talla y arma tu pedido fácilmente.
                         </p>
+
                     </div>
 
                 </div>
+
+
+                <div class="valor">
+
+                    <div class="valor-icono">
+                        💙
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            SPORT CLASS
+                        </h3>
+
+                        <p>
+                            Una marca creada para quienes
+                            llevan el fútbol en la camiseta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ESTADÍSTICAS -->
+
+        <div class="estadisticas">
+
+            <div class="estadistica">
+
+                <div class="estadistica-icono">
+                    👕
+                </div>
+
+                <strong>
+                    +30
+                </strong>
+
+                <span>
+                    Modelos
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                <div class="estadistica-icono">
+                    ⚽
+                </div>
+
+                <strong>
+                    6
+                </strong>
+
+                <span>
+                    Categorías
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                <div class="estadistica-icono">
+                    📦
+                </div>
+
+                <strong>
+                    6+
+                </strong>
+
+                <span>
+                    Unidades mayoristas
+                </span>
+
+            </div>
+
+
+            <div class="estadistica">
+
+                <div class="estadistica-icono">
+                    💙
+                </div>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Pasión
+                </span>
 
             </div>
 
@@ -327,10 +300,9 @@
 </section>
 
 
-
-<!-- =====================================================
+<!-- =========================================================
      CATÁLOGO
-===================================================== -->
+========================================================= -->
 
 <section
     class="seccion catalogo"
@@ -339,239 +311,120 @@
 
     <div class="contenedor">
 
-        <div class="titulo-seccion">
+        <h2>
+            CATÁLOGO
+        </h2>
 
-            <span class="titulo-mini">
-                EXPLORA
-            </span>
-
-            <h2>
-                NUESTRO
-                <span>CATÁLOGO</span>
-            </h2>
-
-            <p class="subtitulo-catalogo">
-                Encuentra el estilo que más va contigo.
-            </p>
-
-        </div>
-
+        <p class="subtitulo-catalogo">
+            Elige la categoría que quieres ver.
+        </p>
 
         <div class="categorias">
 
-
-            <!-- COLOMBIA -->
-
             <a
                 href="#colombia"
-                class="categoria categoria-colombia"
+                class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    CO
-                </div>
+                <span>🇨🇴</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-flag"></i>
-                </div>
+                <h3>
+                    COLOMBIA
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        01
-                    </span>
-
-                    <h3>
-                        COLOMBIA
-                    </h3>
-
-                    <p>
-                        Equipos colombianos
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Equipos colombianos
+                </p>
 
             </a>
 
-
-            <!-- AMÉRICA -->
 
             <a
                 href="#america"
                 class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    AM
-                </div>
+                <span>🌎</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-earth-americas"></i>
-                </div>
+                <h3>
+                    AMÉRICA
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        02
-                    </span>
-
-                    <h3>
-                        AMÉRICA
-                    </h3>
-
-                    <p>
-                        Equipos del continente
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Equipos de América
+                </p>
 
             </a>
 
-
-            <!-- EUROPA -->
 
             <a
                 href="#europa"
                 class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    EU
-                </div>
+                <span>🇪🇺</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-earth-europe"></i>
-                </div>
+                <h3>
+                    EUROPA
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        03
-                    </span>
-
-                    <h3>
-                        EUROPA
-                    </h3>
-
-                    <p>
-                        Grandes clubes europeos
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Grandes equipos europeos
+                </p>
 
             </a>
 
-
-            <!-- PAÍSES -->
 
             <a
                 href="#paises"
                 class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    WC
-                </div>
+                <span>🌍</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
+                <h3>
+                    PAÍSES
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        04
-                    </span>
-
-                    <h3>
-                        PAÍSES
-                    </h3>
-
-                    <p>
-                        Selecciones nacionales
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Selecciones nacionales
+                </p>
 
             </a>
 
-
-            <!-- RETRO -->
 
             <a
                 href="#retro"
-                class="categoria categoria-retro"
+                class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    90
-                </div>
+                <span>🔥</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                </div>
+                <h3>
+                    RETRO
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        05
-                    </span>
-
-                    <h3>
-                        RETRO
-                    </h3>
-
-                    <p>
-                        Historias que nunca pasan
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Camisetas históricas
+                </p>
 
             </a>
 
-
-            <!-- GUAYOS -->
 
             <a
                 href="#guayos"
-                class="categoria categoria-guayos"
+                class="categoria"
             >
 
-                <div class="categoria-fondo">
-                    SC
-                </div>
+                <span>👟</span>
 
-                <div class="categoria-icono">
-                    <i class="fa-solid fa-shoe-prints"></i>
-                </div>
+                <h3>
+                    GUAYOS
+                </h3>
 
-                <div class="categoria-contenido">
-
-                    <span class="categoria-numero">
-                        06
-                    </span>
-
-                    <h3>
-                        GUAYOS
-                    </h3>
-
-                    <p>
-                        Para llevar el juego a otro nivel
-                    </p>
-
-                </div>
-
-                <i class="fa-solid fa-arrow-right categoria-flecha"></i>
+                <p>
+                    Calzado deportivo
+                </p>
 
             </a>
 
@@ -582,82 +435,9 @@
 </section>
 
 
-
-<!-- =====================================================
-     GUÍA DE TALLAS
-===================================================== -->
-
-<section class="seccion guia-tallas">
-
-    <div class="contenedor">
-
-        <div class="guia-tallas-box">
-
-            <div class="guia-icono">
-                <i class="fa-solid fa-ruler-combined"></i>
-            </div>
-
-
-            <div class="guia-texto">
-
-                <span>
-                    ANTES DE COMPRAR
-                </span>
-
-                <h2>
-                    ENCUENTRA
-                    <strong>TU TALLA</strong>
-                </h2>
-
-                <p>
-                    Si tienes dudas entre dos tallas,
-                    revisa nuestra guía antes de agregar
-                    tu camiseta al carrito.
-                </p>
-
-            </div>
-
-
-            <div class="tabla-tallas">
-
-                <div class="talla-item">
-                    <strong>S</strong>
-                    <span>Pequeña</span>
-                </div>
-
-                <div class="talla-item">
-                    <strong>M</strong>
-                    <span>Mediana</span>
-                </div>
-
-                <div class="talla-item">
-                    <strong>L</strong>
-                    <span>Grande</span>
-                </div>
-
-                <div class="talla-item">
-                    <strong>XL</strong>
-                    <span>Extra</span>
-                </div>
-
-                <div class="talla-item">
-                    <strong>XXL</strong>
-                    <span>Extra grande</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CAMISETAS
-===================================================== -->
+<!-- =========================================================
+     PRODUCTOS
+========================================================= -->
 
 <section
     class="seccion productos-seccion"
@@ -666,49 +446,21 @@
 
     <div class="contenedor">
 
-        <div class="titulo-seccion">
-
-            <span class="titulo-mini">
-                SHOP
-            </span>
-
-            <h2>
-                CAMISETAS
-            </h2>
-
-            <p class="subtitulo-catalogo">
-                Elige tu camiseta y agrégala al carrito.
-            </p>
-
-        </div>
+        <h2>
+            CAMISETAS
+        </h2>
 
 
-
-        <!-- =================================================
-             COLOMBIA
-        ================================================== -->
+        <!-- COLOMBIA -->
 
         <div
             id="colombia"
             class="categoria-productos"
         >
 
-            <div class="grupo-title">
-
-                <div>
-                    <span>
-                        COLECCIÓN 01
-                    </span>
-
-                    <h3>
-                        Colombia
-                    </h3>
-                </div>
-
-                <div class="grupo-linea"></div>
-
-            </div>
-
+            <h2>
+                Colombia
+            </h2>
 
             <div class="productos">
 
@@ -725,34 +477,25 @@
                         alt="América de Cali 2026 Local"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        América de Cali 2026 Local
+                    </h3>
 
-                        <span class="producto-categoria">
-                            COLOMBIA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            América de Cali 2026 Local
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -769,34 +512,25 @@
                         alt="América de Cali Visitante"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        América de Cali Visitante
+                    </h3>
 
-                        <span class="producto-categoria">
-                            COLOMBIA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            América de Cali Visitante
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -813,34 +547,25 @@
                         alt="Atlético Nacional Local"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Atlético Nacional Local
+                    </h3>
 
-                        <span class="producto-categoria">
-                            COLOMBIA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            Atlético Nacional Local
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -857,34 +582,25 @@
                         alt="Junior Local"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Junior Local
+                    </h3>
 
-                        <span class="producto-categoria">
-                            COLOMBIA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            Junior Local
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -901,34 +617,25 @@
                         alt="Santa Fe Negra 2026"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Santa Fe Negra 2026
+                    </h3>
 
-                        <span class="producto-categoria">
-                            COLOMBIA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            Santa Fe Negra 2026
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -937,32 +644,16 @@
         </div>
 
 
-
-        <!-- =================================================
-             AMÉRICA
-        ================================================== -->
+        <!-- AMÉRICA -->
 
         <div
             id="america"
             class="categoria-productos"
         >
 
-            <div class="grupo-title">
-
-                <div>
-                    <span>
-                        COLECCIÓN 02
-                    </span>
-
-                    <h3>
-                        América
-                    </h3>
-                </div>
-
-                <div class="grupo-linea"></div>
-
-            </div>
-
+            <h2>
+                América
+            </h2>
 
             <div class="productos">
 
@@ -979,34 +670,25 @@
                         alt="Corinthians 2026 Local"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Corinthians 2026 Local
+                    </h3>
 
-                        <span class="producto-categoria">
-                            AMÉRICA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            Corinthians 2026 Local
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1023,34 +705,25 @@
                         alt="Santos Negra"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Santos Negra
+                    </h3>
 
-                        <span class="producto-categoria">
-                            AMÉRICA
-                        </span>
+                    <p class="precio">
+                        $50.000
+                    </p>
 
-                        <h3>
-                            Santos Negra
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $50.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1067,34 +740,25 @@
                         alt="Vasco da Gama Visitante 2026"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Vasco da Gama Visitante 2026
+                    </h3>
 
-                        <span class="producto-categoria">
-                            AMÉRICA
-                        </span>
+                    <p class="precio">
+                        $55.000
+                    </p>
 
-                        <h3>
-                            Vasco da Gama Visitante 2026
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $55.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button
+                        class="boton-producto"
+                        type="button"
+                    >
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1103,260 +767,340 @@
         </div>
 
 
-
-        <!-- =================================================
-             EUROPA
-        ================================================== -->
+        <!-- EUROPA -->
 
         <div
             id="europa"
             class="categoria-productos"
         >
 
-            <div class="grupo-title">
-
-                <div>
-                    <span>
-                        COLECCIÓN 03
-                    </span>
-
-                    <h3>
-                        Europa
-                    </h3>
-                </div>
-
-                <div class="grupo-linea"></div>
-
-            </div>
-
+            <h2>
+                Europa
+            </h2>
 
             <div class="productos">
 
 
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="barcelona 2026 local.jpeg" alt="Barcelona 2026 Local">
+                    <img
+                        src="barcelona 2026 local.jpeg"
+                        alt="Barcelona 2026 Local"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Barcelona 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Barcelona 2026 Local
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $70.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="europa" data-precio="65000" data-mayoreo="35000">
-
-                    <img src="barcelona-visita-2026.jpeg" alt="Barcelona Morada Visitante 2026">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Barcelona Morada Visitante 2026</h3>
-                        <p class="precio">$65.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="60000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="barcelona-edicion-especial-26-27.jpeg" alt="Barcelona Edición Especial 26-27">
+                    <img
+                        src="barcelona-visita-2026.jpeg"
+                        alt="Barcelona Morada Visitante 2026"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Barcelona Edición Especial 26-27</h3>
-                        <p class="precio">$60.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Barcelona Morada Visitante 2026
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $65.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
-
-                    <img src="liverpool 2026 local.jpeg" alt="Liverpool 2026 Local">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Liverpool 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="bayern 2026 local.jpeg" alt="Bayern Munich 2026 Local">
+                    <img
+                        src="barcelona-edicion-especial-26-27.jpeg"
+                        alt="Barcelona Edición Especial 26-27"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Bayern Munich 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Barcelona Edición Especial 26-27
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $60.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
-
-                    <img src="real madrid 2026 local.jpeg" alt="Real Madrid 2026 Local">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Real Madrid 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="68000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="real-madrid-visitante-2026-rosada.jpeg" alt="Real Madrid Visitante 2026 Rosada">
+                    <img
+                        src="liverpool 2026 local.jpeg"
+                        alt="Liverpool 2026 Local"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Real Madrid Visitante 2026 Rosada</h3>
-                        <p class="precio">$68.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Liverpool 2026 Local
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $70.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
-
-                    <img src="milan fc local 2026.jpeg" alt="Milan FC 2026 Local">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Milan FC 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="arsenal 2026 local.jpeg" alt="Arsenal 2026 Local">
+                    <img
+                        src="bayern 2026 local.jpeg"
+                        alt="Bayern Munich 2026 Local"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Arsenal 2026 Local</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Bayern Munich 2026 Local
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $70.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
-
-                    <img src="barcelona fc rosada.jpeg" alt="Barcelona FC Rosada">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Barcelona FC Rosada</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="70000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="real madrid aniversario.jpeg" alt="Real Madrid Aniversario">
+                    <img
+                        src="real madrid 2026 local.jpeg"
+                        alt="Real Madrid 2026 Local"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Real Madrid Aniversario</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Real Madrid 2026 Local
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="europa" data-precio="65000" data-mayoreo="35000">
+                <div class="producto" data-categoria="europa">
 
-                    <img src="roma-visitante-2026.jpeg" alt="Roma Visitante 2026">
+                    <img
+                        src="real-madrid-visitante-2026-rosada.jpeg"
+                        alt="Real Madrid Visitante 2026 Rosada"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">EUROPA</span>
-                        <h3>Roma Visitante 2026</h3>
-                        <p class="precio">$65.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $35.000 c/u</p>
+                    <h3>
+                        Real Madrid Visitante 2026 Rosada
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $68.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="europa">
+
+                    <img
+                        src="milan fc local 2026.jpeg"
+                        alt="Milan FC 2026 Local"
+                    >
+
+                    <h3>
+                        Milan FC 2026 Local
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="europa">
+
+                    <img
+                        src="arsenal 2026 local.jpeg"
+                        alt="Arsenal 2026 Local"
+                    >
+
+                    <h3>
+                        Arsenal 2026 Local
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="europa">
+
+                    <img
+                        src="barcelona fc rosada.jpeg"
+                        alt="Barcelona FC Rosada"
+                    >
+
+                    <h3>
+                        Barcelona FC Rosada
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="europa">
+
+                    <img
+                        src="real madrid aniversario.jpeg"
+                        alt="Real Madrid Aniversario"
+                    >
+
+                    <h3>
+                        Real Madrid Aniversario
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="europa">
+
+                    <img
+                        src="roma-visitante-2026.jpeg"
+                        alt="Roma Visitante 2026"
+                    >
+
+                    <h3>
+                        Roma Visitante 2026
+                    </h3>
+
+                    <p class="precio">
+                        $65.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $35.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1365,41 +1109,22 @@
         </div>
 
 
-
-        <!-- =================================================
-             PAÍSES
-        ================================================== -->
+        <!-- PAÍSES -->
 
         <div
             id="paises"
             class="categoria-productos"
         >
 
-            <div class="grupo-title">
-
-                <div>
-                    <span>
-                        COLECCIÓN 04
-                    </span>
-
-                    <h3>
-                        Países
-                    </h3>
-                </div>
-
-                <div class="grupo-linea"></div>
-
-            </div>
-
+            <h2>
+                Países
+            </h2>
 
             <div class="productos">
-
 
                 <div
                     class="producto"
                     data-categoria="paises"
-                    data-precio="60000"
-                    data-mayoreo="30000"
                 >
 
                     <img
@@ -1407,34 +1132,22 @@
                         alt="Francia 2026 Mundial"
                     >
 
-                    <div class="producto-info">
+                    <h3>
+                        Francia 2026 Mundial
+                    </h3>
 
-                        <span class="producto-categoria">
-                            PAÍSES
-                        </span>
+                    <p class="precio">
+                        $60.000
+                    </p>
 
-                        <h3>
-                            Francia 2026 Mundial
-                        </h3>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $30.000 c/u
+                    </p>
 
-                        <p class="precio">
-                            $60.000
-                        </p>
-
-                        <p class="precio-mayoreo">
-                            Desde 6 unidades:
-                            $30.000 c/u
-                        </p>
-
-                        <button
-                            class="boton-producto"
-                            type="button"
-                        >
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1443,222 +1156,286 @@
         </div>
 
 
-
-        <!-- =================================================
-             RETRO
-        ================================================== -->
+        <!-- RETRO -->
 
         <div
             id="retro"
             class="categoria-productos"
         >
 
-            <div class="grupo-title">
-
-                <div>
-                    <span>
-                        COLECCIÓN 05
-                    </span>
-
-                    <h3>
-                        Retro
-                    </h3>
-                </div>
-
-                <div class="grupo-linea"></div>
-
-            </div>
-
+            <h2>
+                Retro
+            </h2>
 
             <div class="productos">
 
 
-                <div class="producto" data-categoria="retro" data-precio="80000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="boca jrs retro quilmes.jpeg" alt="Boca Juniors Retro Quilmes">
+                    <img
+                        src="boca jrs retro quilmes.jpeg"
+                        alt="Boca Juniors Retro Quilmes"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Boca Juniors Retro Quilmes</h3>
-                        <p class="precio">$80.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Boca Juniors Retro Quilmes
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $80.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="retro" data-precio="80000" data-mayoreo="40000">
-
-                    <img src="barcelona-retro.jpeg" alt="Barcelona Retro Ronaldinho">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Barcelona Retro Ronaldinho</h3>
-                        <p class="precio">$80.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="retro" data-precio="70000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="liverpool-retro.jpeg" alt="Liverpool Retro">
+                    <img
+                        src="barcelona-retro.jpeg"
+                        alt="Barcelona Retro Ronaldinho"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Liverpool Retro</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Barcelona Retro Ronaldinho
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $80.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="retro" data-precio="80000" data-mayoreo="40000">
-
-                    <img src="inglaterra-retro.jpeg" alt="Inglaterra Retro Beckham">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Inglaterra Retro Beckham</h3>
-                        <p class="precio">$80.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="retro" data-precio="85000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="bayern-munich-retro.jpeg" alt="Bayern Munich Retro Opel">
+                    <img
+                        src="liverpool-retro.jpeg"
+                        alt="Liverpool Retro"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Bayern Munich Retro Opel</h3>
-                        <p class="precio">$85.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Liverpool Retro
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $70.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="retro" data-precio="90000" data-mayoreo="40000">
-
-                    <img src="alemania-retro.jpeg" alt="Alemania Retro Negra">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Alemania Retro Negra</h3>
-                        <p class="precio">$90.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="retro" data-precio="70000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="japonretro.jpeg" alt="Japón Retro Adidas">
+                    <img
+                        src="inglaterra-retro.jpeg"
+                        alt="Inglaterra Retro Beckham"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Japón Retro Adidas</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Inglaterra Retro Beckham
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $80.000
+                    </p>
 
-                </div>
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
 
-
-                <div class="producto" data-categoria="retro" data-precio="80000" data-mayoreo="40000">
-
-                    <img src="riverplate-retro-quilmes.jpeg" alt="River Plate Retro Quilmes">
-
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>River Plate Retro Quilmes</h3>
-                        <p class="precio">$80.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
-
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="retro" data-precio="75000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="argentina-retro-visitante-maradona.jpeg" alt="Argentina Retro Visitante Maradona">
+                    <img
+                        src="bayern-munich-retro.jpeg"
+                        alt="Bayern Munich Retro Opel"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Argentina Retro Visitante Maradona</h3>
-                        <p class="precio">$75.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Bayern Munich Retro Opel
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $85.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
 
-                <div class="producto" data-categoria="retro" data-precio="70000" data-mayoreo="40000">
+                <div class="producto" data-categoria="retro">
 
-                    <img src="brasil-retro-local-ronaldo.jpeg" alt="Brasil Retro Local Ronaldo">
+                    <img
+                        src="alemania-retro.jpeg"
+                        alt="Alemania Retro Negra"
+                    >
 
-                    <div class="producto-info">
-                        <span class="producto-categoria">RETRO</span>
-                        <h3>Brasil Retro Local Ronaldo</h3>
-                        <p class="precio">$70.000</p>
-                        <p class="precio-mayoreo">Desde 6 unidades: $40.000 c/u</p>
+                    <h3>
+                        Alemania Retro Negra
+                    </h3>
 
-                        <button class="boton-producto" type="button">
-                            <span>AGREGAR</span>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p class="precio">
+                        $90.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="retro">
+
+                    <img
+                        src="japonretro.jpeg"
+                        alt="Japón Retro Adidas"
+                    >
+
+                    <h3>
+                        Japón Retro Adidas
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="retro">
+
+                    <img
+                        src="riverplate-retro-quilmes.jpeg"
+                        alt="River Plate Retro Quilmes"
+                    >
+
+                    <h3>
+                        River Plate Retro Quilmes
+                    </h3>
+
+                    <p class="precio">
+                        $80.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="retro">
+
+                    <img
+                        src="argentina-retro-visitante-maradona.jpeg"
+                        alt="Argentina Retro Visitante Maradona"
+                    >
+
+                    <h3>
+                        Argentina Retro Visitante Maradona
+                    </h3>
+
+                    <p class="precio">
+                        $75.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
+
+                </div>
+
+
+                <div class="producto" data-categoria="retro">
+
+                    <img
+                        src="brasil-retro-local-ronaldo.jpeg"
+                        alt="Brasil Retro Local Ronaldo"
+                    >
+
+                    <h3>
+                        Brasil Retro Local Ronaldo
+                    </h3>
+
+                    <p class="precio">
+                        $70.000
+                    </p>
+
+                    <p class="precio-mayoreo">
+                        Después de 6 unidades:
+                        $40.000 c/u
+                    </p>
+
+                    <button class="boton-producto" type="button">
+                        AGREGAR AL CARRITO
+                    </button>
 
                 </div>
 
@@ -1671,160 +1448,178 @@
 </section>
 
 
-
-<!-- =====================================================
+<!-- =========================================================
      GUAYOS
-===================================================== -->
+========================================================= -->
 
 <section
-    class="seccion guayos"
+    class="seccion productos-seccion"
     id="guayos"
 >
 
     <div class="contenedor">
 
-        <div class="titulo-seccion">
+        <h2>
+            GUAYOS
+        </h2>
 
-            <span class="titulo-mini">
-                FOOTWEAR
-            </span>
-
-            <h2>
-                GUAYOS
-            </h2>
-
-            <p class="subtitulo-catalogo">
-                Lleva tu juego a otro nivel.
-            </p>
-
-        </div>
-
+        <p class="subtitulo-catalogo">
+            Guayos deportivos disponibles.
+        </p>
 
         <div class="productos">
 
 
-            <div class="producto" data-categoria="guayos" data-precio="150000" data-mayoreo="150000">
+            <div class="producto" data-categoria="guayos">
 
-                <img src="guayo1.jpeg" alt="Guayo 1">
+                <img
+                    src="guayo1.jpeg"
+                    alt="Guayo 1"
+                >
 
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 1</h3>
-                    <p class="precio">$150.000</p>
+                <h3>
+                    Guayo 1
+                </h3>
 
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <p class="precio">
+                    $150.000
+                </p>
 
-            </div>
-
-
-            <div class="producto" data-categoria="guayos" data-precio="150000" data-mayoreo="150000">
-
-                <img src="guayo2.jpeg" alt="Guayo 2">
-
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 2</h3>
-                    <p class="precio">$150.000</p>
-
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
 
             </div>
 
 
-            <div class="producto" data-categoria="guayos" data-precio="150000" data-mayoreo="150000">
+            <div class="producto" data-categoria="guayos">
 
-                <img src="guayo3.jpeg" alt="Guayo 3">
+                <img
+                    src="guayo2.jpeg"
+                    alt="Guayo 2"
+                >
 
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 3</h3>
-                    <p class="precio">$150.000</p>
+                <h3>
+                    Guayo 2
+                </h3>
 
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <p class="precio">
+                    $150.000
+                </p>
 
-            </div>
-
-
-            <div class="producto" data-categoria="guayos" data-precio="150000" data-mayoreo="150000">
-
-                <img src="guayo4.jpeg" alt="Guayo 4">
-
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 4</h3>
-                    <p class="precio">$150.000</p>
-
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
 
             </div>
 
 
-            <div class="producto" data-categoria="guayos" data-precio="130000" data-mayoreo="130000">
+            <div class="producto" data-categoria="guayos">
 
-                <img src="guayo5.jpeg" alt="Guayo 5">
+                <img
+                    src="guayo3.jpeg"
+                    alt="Guayo 3"
+                >
 
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 5</h3>
-                    <p class="precio">$130.000</p>
+                <h3>
+                    Guayo 3
+                </h3>
 
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <p class="precio">
+                    $150.000
+                </p>
 
-            </div>
-
-
-            <div class="producto" data-categoria="guayos" data-precio="130000" data-mayoreo="130000">
-
-                <img src="guayo6.jpeg" alt="Guayo 6">
-
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 6</h3>
-                    <p class="precio">$130.000</p>
-
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
 
             </div>
 
 
-            <div class="producto" data-categoria="guayos" data-precio="130000" data-mayoreo="130000">
+            <div class="producto" data-categoria="guayos">
 
-                <img src="guayo7.jpeg" alt="Guayo 7">
+                <img
+                    src="guayo4.jpeg"
+                    alt="Guayo 4"
+                >
 
-                <div class="producto-info">
-                    <span class="producto-categoria">GUAYOS</span>
-                    <h3>Guayo 7</h3>
-                    <p class="precio">$130.000</p>
+                <h3>
+                    Guayo 4
+                </h3>
 
-                    <button class="boton-producto" type="button">
-                        <span>AGREGAR</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
+                <p class="precio">
+                    $150.000
+                </p>
+
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
+
+            </div>
+
+
+            <div class="producto" data-categoria="guayos">
+
+                <img
+                    src="guayo5.jpeg"
+                    alt="Guayo 5"
+                >
+
+                <h3>
+                    Guayo 5
+                </h3>
+
+                <p class="precio">
+                    $130.000
+                </p>
+
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
+
+            </div>
+
+
+            <div class="producto" data-categoria="guayos">
+
+                <img
+                    src="guayo6.jpeg"
+                    alt="Guayo 6"
+                >
+
+                <h3>
+                    Guayo 6
+                </h3>
+
+                <p class="precio">
+                    $130.000
+                </p>
+
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
+
+            </div>
+
+
+            <div class="producto" data-categoria="guayos">
+
+                <img
+                    src="guayo7.jpeg"
+                    alt="Guayo 7"
+                >
+
+                <h3>
+                    Guayo 7
+                </h3>
+
+                <p class="precio">
+                    $130.000
+                </p>
+
+                <button class="boton-producto" type="button">
+                    AGREGAR AL CARRITO
+                </button>
 
             </div>
 
@@ -1835,10 +1630,9 @@
 </section>
 
 
-
-<!-- =====================================================
+<!-- =========================================================
      MODAL PRODUCTO
-===================================================== -->
+========================================================= -->
 
 <div
     class="modal"
@@ -1855,116 +1649,95 @@
             ×
         </button>
 
+        <img
+            id="producto-imagen"
+            src=""
+            alt="Producto"
+        >
 
-        <div class="modal-producto-imagen">
+        <h2 id="producto-nombre">
+            Producto
+        </h2>
 
-            <img
-                id="producto-imagen"
-                src=""
-                alt="Producto"
-            >
+        <p
+            id="producto-precio"
+            style="
+                color:#1473ff;
+                font-size:24px;
+                font-weight:900;
+            "
+        >
+            $0
+        </p>
 
-        </div>
+        <p
+            id="producto-mayoreo"
+            style="
+                color:#25d366;
+                font-weight:bold;
+            "
+        >
+            Desde 6 unidades: precio especial
+        </p>
 
+        <label for="talla">
+            Selecciona la talla
+        </label>
 
-        <div class="modal-producto-info">
+        <select id="talla">
 
-            <span class="producto-categoria">
-                SPORT CLASS
-            </span>
+            <option value="">
+                Seleccionar talla
+            </option>
 
-            <h2 id="producto-nombre">
-                Producto
-            </h2>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
 
+        </select>
 
-            <p
-                id="producto-precio"
-                class="modal-precio"
-            >
-                $0
-            </p>
+        <label for="cantidad-producto">
+            Cantidad de unidades
+        </label>
 
+        <input
+            type="number"
+            id="cantidad-producto"
+            min="1"
+            value="1"
+        >
 
-            <p
-                id="producto-mayoreo"
-                class="modal-mayoreo"
-            >
-                Desde 6 unidades:
-                precio especial
-            </p>
+        <p
+            style="
+                color:#aeb8c6;
+                margin-top:10px;
+                font-size:14px;
+            "
+        >
+            Puedes elegir 1, varias unidades,
+            media docena o una docena.
+            Al llegar a 6 unidades se aplica
+            automáticamente el precio especial.
+        </p>
 
-
-            <label for="talla">
-                <i class="fa-solid fa-ruler"></i>
-                Selecciona la talla
-            </label>
-
-
-            <select id="talla">
-
-                <option value="">
-                    Seleccionar talla
-                </option>
-
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-
-            </select>
-
-
-            <label for="cantidad-producto">
-                <i class="fa-solid fa-box"></i>
-                Cantidad
-            </label>
-
-
-            <input
-                type="number"
-                id="cantidad-producto"
-                min="1"
-                value="1"
-            >
-
-
-            <div class="modal-aviso">
-
-                <i class="fa-solid fa-circle-info"></i>
-
-                <span>
-                    Desde 6 unidades se activa
-                    automáticamente el precio mayorista.
-                </span>
-
-            </div>
-
-
-            <button
-                class="boton-principal boton-modal"
-                id="agregar-carrito"
-                type="button"
-            >
-
-                <i class="fa-solid fa-bag-shopping"></i>
-
-                AGREGAR AL CARRITO
-
-            </button>
-
-        </div>
+        <button
+            class="boton-principal"
+            id="agregar-carrito"
+            type="button"
+        >
+            AGREGAR AL CARRITO
+        </button>
 
     </div>
 
 </div>
 
 
-
-<!-- =====================================================
-     MODAL CARRITO
-===================================================== -->
+<!-- =========================================================
+     CARRITO
+========================================================= -->
 
 <div
     class="modal"
@@ -1981,29 +1754,17 @@
             ×
         </button>
 
-
-        <div class="modal-cabecera">
-
-            <span class="modal-icono">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </span>
-
-            <div>
-                <span>SPORT CLASS</span>
-                <h2>Tu carrito</h2>
-            </div>
-
-        </div>
-
+        <h2>
+            🛒 Tu carrito
+        </h2>
 
         <div id="lista-carrito"></div>
 
-
         <div class="total">
 
-            <span>
+            <strong>
                 TOTAL
-            </span>
+            </strong>
 
             <strong id="total-carrito">
                 $0
@@ -2011,14 +1772,12 @@
 
         </div>
 
-
         <button
             class="boton-principal"
             id="boton-comprar"
             type="button"
         >
             CONTINUAR CON LA COMPRA
-            <i class="fa-solid fa-arrow-right"></i>
         </button>
 
     </div>
@@ -2026,10 +1785,9 @@
 </div>
 
 
-
-<!-- =====================================================
-     MODAL DATOS
-===================================================== -->
+<!-- =========================================================
+     DATOS DEL CLIENTE
+========================================================= -->
 
 <div
     class="modal"
@@ -2046,25 +1804,9 @@
             ×
         </button>
 
-
-        <div class="modal-cabecera">
-
-            <span class="modal-icono">
-                <i class="fa-solid fa-location-dot"></i>
-            </span>
-
-            <div>
-
-                <span>ENTREGA</span>
-
-                <h2>
-                    Datos de entrega
-                </h2>
-
-            </div>
-
-        </div>
-
+        <h2>
+            Datos de entrega
+        </h2>
 
         <form id="formulario-compra">
 
@@ -2076,7 +1818,6 @@
                 type="text"
                 id="nombre-cliente"
                 required
-                autocomplete="name"
             >
 
 
@@ -2088,7 +1829,6 @@
                 type="tel"
                 id="telefono-cliente"
                 required
-                autocomplete="tel"
             >
 
 
@@ -2100,7 +1840,6 @@
                 type="text"
                 id="ciudad-cliente"
                 required
-                autocomplete="address-level2"
             >
 
 
@@ -2112,7 +1851,6 @@
                 type="text"
                 id="direccion-cliente"
                 required
-                autocomplete="street-address"
             >
 
 
@@ -2120,11 +1858,7 @@
                 type="submit"
                 class="boton-principal"
             >
-
                 CONTINUAR AL PAGO
-
-                <i class="fa-solid fa-arrow-right"></i>
-
             </button>
 
         </form>
@@ -2134,10 +1868,9 @@
 </div>
 
 
-
-<!-- =====================================================
-     MODAL PAGO
-===================================================== -->
+<!-- =========================================================
+     PAGO
+========================================================= -->
 
 <div
     class="modal"
@@ -2154,39 +1887,21 @@
             ×
         </button>
 
-
-        <div class="modal-cabecera">
-
-            <span class="modal-icono pago">
-                <i class="fa-solid fa-credit-card"></i>
-            </span>
-
-            <div>
-
-                <span>FINALIZAR PEDIDO</span>
-
-                <h2>
-                    Realizar pago
-                </h2>
-
-            </div>
-
-        </div>
-
+        <h2>
+            Realizar pago
+        </h2>
 
         <div class="pago-info">
 
             <h3>
-                <i class="fa-solid fa-shield-halved"></i>
-                Pago por BRE-B
+                💳 Pago
             </h3>
 
-
             <p>
-                Realiza el pago correspondiente
-                y después adjunta tu comprobante.
+                Realiza el pago y después adjunta
+                el comprobante para finalizar
+                tu pedido.
             </p>
-
 
             <div class="dato-pago">
 
@@ -2199,7 +1914,6 @@
                 </span>
 
             </div>
-
 
             <div class="dato-pago">
 
@@ -2222,7 +1936,6 @@
                 Comprobante de pago
             </label>
 
-
             <input
                 type="file"
                 id="comprobante"
@@ -2230,27 +1943,17 @@
                 required
             >
 
-
             <p class="ayuda-comprobante">
-
-                <i class="fa-solid fa-paperclip"></i>
-
-                Selecciona tu comprobante.
-                Después se abrirá Gmail con
-                la información del pedido.
-
+                Selecciona el comprobante.
+                Al continuar se abrirá Gmail
+                con la información de tu pedido.
             </p>
-
 
             <button
                 type="submit"
                 class="boton-principal"
             >
-
-                <i class="fa-solid fa-envelope"></i>
-
-                ENVIAR PEDIDO POR GMAIL
-
+                ENVIAR COMPROBANTE POR GMAIL
             </button>
 
         </form>
@@ -2260,95 +1963,26 @@
 </div>
 
 
-
-<!-- =====================================================
+<!-- =========================================================
      FOOTER
-===================================================== -->
+========================================================= -->
 
 <footer>
 
-    <div class="footer-contenedor">
+    <h3>
+        SPORT CLASS
+    </h3>
 
-
-        <div class="footer-marca">
-
-            <div class="logo footer-logo">
-
-                <span class="logo-icono">
-                    <i class="fa-solid fa-futbol"></i>
-                </span>
-
-                <span class="logo-texto">
-                    SPORT<span>CLASS</span>
-                </span>
-
-            </div>
-
-
-            <p>
-                Fútbol, pasión y estilo.
-            </p>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="#inicio">
-                Inicio
-            </a>
-
-            <a href="#nosotros">
-                Nosotros
-            </a>
-
-            <a href="#catalogo">
-                Catálogo
-            </a>
-
-            <a href="#productos">
-                Camisetas
-            </a>
-
-            <a href="#guayos">
-                Guayos
-            </a>
-
-        </div>
-
-
-        <div class="footer-social">
-
-            <span>
-                SPORT CLASS
-            </span>
-
-            <div>
-                <i class="fa-solid fa-futbol"></i>
-                <i class="fa-solid fa-shirt"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Sport Class · Todos los derechos reservados
-        </p>
-
-    </div>
+    <p>
+        Fútbol, pasión y estilo.
+    </p>
 
 </footer>
 
 
-
-<!-- =====================================================
-     SCRIPT
-===================================================== -->
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
 <script src="script.js"></script>
 
