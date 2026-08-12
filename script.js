@@ -1,6 +1,7 @@
 // ============================================
 //              SPORT CLASS
 //                SCRIPT.JS
+//          VERSIÓN MODERNA Y ESTABLE
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const MINIMO_MAYORISTA = 6;
+
 
     // ============================================
     // ELEMENTOS
@@ -212,7 +214,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        if (titulo.includes("guayo")) {
+        if (
+            titulo.includes("guayo") ||
+            titulo.includes("guayos")
+        ) {
 
             return "guayos";
 
@@ -225,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ============================================
-    // PRECIO
+    // OBTENER PRECIO
     // ============================================
 
     function obtenerPrecio(categoria) {
@@ -258,6 +263,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    // ============================================
+    // ACTUALIZAR PRECIOS
+    // ============================================
+
     function actualizarPreciosCarrito() {
 
         carrito.forEach(producto => {
@@ -270,6 +279,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    // ============================================
+    // CANTIDAD TOTAL
+    // ============================================
+
     function obtenerCantidadTotal() {
 
         return carrito.reduce(
@@ -280,6 +293,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+
+    // ============================================
+    // CALCULAR TOTAL
+    // ============================================
 
     function calcularTotal() {
 
@@ -297,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ============================================
-    // CAMBIAR TALLAS SEGÚN PRODUCTO
+    // TALLAS
     // ============================================
 
     function cambiarOpcionesTalla(categoria) {
@@ -312,6 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.createElement("option");
 
         opcionInicial.value = "";
+
         opcionInicial.textContent =
             categoria === "guayos"
                 ? "Seleccionar talla de guayos"
@@ -321,48 +339,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         // ========================================
-        // TALLAS DE GUAYOS
+        // TALLAS GUAYOS
         // ========================================
 
         if (categoria === "guayos") {
 
             const tallasGuayos = [
-
-                {
-                    valor: "Colombia 38",
-                    texto: "Colombia 38"
-                },
-
-                {
-                    valor: "Colombia 39",
-                    texto: "Colombia 39"
-                },
-
-                {
-                    valor: "Colombia 40",
-                    texto: "Colombia 40"
-                },
-
-                {
-                    valor: "Colombia 41",
-                    texto: "Colombia 41"
-                },
-
-                {
-                    valor: "Colombia 42",
-                    texto: "Colombia 42"
-                },
-
-                {
-                    valor: "Colombia 43",
-                    texto: "Colombia 43"
-                },
-
-                {
-                    valor: "Colombia 44",
-                    texto: "Colombia 44"
-                }
-
+                "Colombia 38",
+                "Colombia 39",
+                "Colombia 40",
+                "Colombia 41",
+                "Colombia 42",
+                "Colombia 43",
+                "Colombia 44"
             ];
 
 
@@ -372,10 +361,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.createElement("option");
 
                 opcion.value =
-                    tallaGuayo.valor;
+                    tallaGuayo;
 
                 opcion.textContent =
-                    tallaGuayo.texto;
+                    tallaGuayo;
 
                 talla.appendChild(opcion);
 
@@ -388,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         // ========================================
-        // TALLAS DE CAMISETAS
+        // TALLAS CAMISETAS
         // ========================================
 
         const tallasCamisetas = [
@@ -435,7 +424,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         boton.addEventListener(
             "click",
-            function(evento) {
+            evento => {
 
                 evento.preventDefault();
 
@@ -479,6 +468,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 };
 
 
+                // IMAGEN
+
                 if (productoImagen) {
 
                     productoImagen.src =
@@ -490,6 +481,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
+                // NOMBRE
+
                 if (productoNombre) {
 
                     productoNombre.textContent =
@@ -497,6 +490,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 }
 
+
+                // PRECIO
 
                 if (productoPrecio) {
 
@@ -510,6 +505,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 }
 
+
+                // MAYORISTA
 
                 if (productoMayoreo) {
 
@@ -530,7 +527,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
-                // CAMBIA LAS TALLAS
+                // TALLAS
+
                 cambiarOpcionesTalla(
                     categoria
                 );
@@ -543,12 +541,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
+                // CANTIDAD
+
                 if (cantidadProducto) {
 
                     cantidadProducto.value = 1;
 
                 }
 
+
+                // ABRIR MODAL
 
                 if (ventanaProducto) {
 
@@ -624,6 +626,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
+                // COMPROBAR TALLA
+
                 if (
                     talla &&
                     talla.value === ""
@@ -642,6 +646,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     talla?.value || "Única";
 
 
+                // CANTIDAD
+
                 let cantidad =
                     Number(
                         cantidadProducto?.value || 1
@@ -657,6 +663,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 }
 
+
+                // BUSCAR PRODUCTO EXISTENTE
 
                 const productoExistente =
                     carrito.find(
@@ -732,13 +740,32 @@ document.addEventListener("DOMContentLoaded", () => {
         listaCarrito.innerHTML = "";
 
 
+        // ========================================
+        // CARRITO VACÍO
+        // ========================================
+
         if (carrito.length === 0) {
 
             listaCarrito.innerHTML = `
 
-                <p class="carrito-vacio">
-                    Tu carrito está vacío.
-                </p>
+                <div class="carrito-vacio">
+
+                    <div style="
+                        font-size:48px;
+                        margin-bottom:10px;
+                    ">
+                        🛒
+                    </div>
+
+                    <strong>
+                        Tu carrito está vacío
+                    </strong>
+
+                    <p>
+                        Añade una camiseta y empieza tu pedido.
+                    </p>
+
+                </div>
 
             `;
 
@@ -764,6 +791,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
+        // ========================================
+        // CANTIDAD TOTAL
+        // ========================================
+
         const cantidadTotal =
             obtenerCantidadTotal();
 
@@ -775,6 +806,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let total = 0;
 
+
+        // ========================================
+        // PRODUCTOS
+        // ========================================
 
         carrito.forEach(
             (producto, indice) => {
@@ -811,6 +846,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img
                         src="${producto.imagen}"
                         alt="${producto.nombre}"
+                        loading="lazy"
                     >
 
                     <div class="info-carrito">
@@ -831,8 +867,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="cantidad-carrito">
 
                             <button
+                                type="button"
                                 class="menos-producto"
                                 data-indice="${indice}"
+                                aria-label="Disminuir cantidad"
                             >
                                 −
                             </button>
@@ -842,8 +880,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             </strong>
 
                             <button
+                                type="button"
                                 class="mas-producto"
                                 data-indice="${indice}"
+                                aria-label="Aumentar cantidad"
                             >
                                 +
                             </button>
@@ -860,9 +900,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <button
+                        type="button"
                         class="eliminar-producto"
                         data-indice="${indice}"
-                        title="Eliminar"
+                        title="Eliminar producto"
+                        aria-label="Eliminar producto"
                     >
                         🗑️
                     </button>
@@ -902,6 +944,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 Tienes ${cantidadTotal}
                 unidades.
+
+                <br>
+
                 Se aplicaron los precios
                 especiales desde 6 unidades.
 
@@ -909,9 +954,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } else {
 
+            const faltan =
+                MINIMO_MAYORISTA -
+                cantidadTotal;
+
+
             aviso.innerHTML = `
 
-                Compra ${6 - cantidadTotal}
+                Compra ${faltan}
                 unidad(es) más para activar
                 los precios especiales.
 
@@ -925,6 +975,10 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
+        // ========================================
+        // TOTAL
+        // ========================================
+
         if (totalCarrito) {
 
             totalCarrito.textContent =
@@ -932,6 +986,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
+
+        // ========================================
+        // CONTADOR
+        // ========================================
 
         if (contadorCarrito) {
 
@@ -946,7 +1004,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // ========================================
 
         document
-            .querySelectorAll(".menos-producto")
+            .querySelectorAll(
+                ".menos-producto"
+            )
             .forEach(boton => {
 
                 boton.addEventListener(
@@ -994,7 +1054,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // ========================================
 
         document
-            .querySelectorAll(".mas-producto")
+            .querySelectorAll(
+                ".mas-producto"
+            )
             .forEach(boton => {
 
                 boton.addEventListener(
@@ -1378,6 +1440,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
+                // DATOS CLIENTE
+
                 const nombre =
                     document
                         .getElementById(
@@ -1414,9 +1478,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         .trim();
 
 
+                // TOTAL
+
                 const total =
                     calcularTotal();
 
+
+                // PRODUCTOS
 
                 let productosTexto = "";
 
@@ -1446,9 +1514,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 );
 
 
+                // ASUNTO
+
                 const asunto =
                     "Nuevo pedido - SPORT CLASS";
 
+
+                // CUERPO DEL CORREO
 
                 const cuerpo =
 
@@ -1487,6 +1559,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     "Gracias por comprar en SPORT CLASS.";
 
 
+                // ========================================
+                // GMAIL
+                // ========================================
+
                 const gmailUrl =
 
                     "https://mail.google.com/mail/?view=cm" +
@@ -1523,6 +1599,277 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
     }
+
+
+    // ============================================
+    // ESC PARA CERRAR MODALES
+    // ============================================
+
+    document.addEventListener(
+        "keydown",
+        evento => {
+
+            if (evento.key !== "Escape") {
+                return;
+            }
+
+
+            ventanaProducto
+                ?.classList
+                .remove("activo");
+
+
+            ventanaCarrito
+                ?.classList
+                .remove("activo");
+
+
+            ventanaDatos
+                ?.classList
+                .remove("activo");
+
+
+            ventanaPago
+                ?.classList
+                .remove("activo");
+
+        }
+    );
+
+
+    // ============================================
+    // EVITAR SCROLL DEL FONDO CUANDO HAY MODAL
+    // ============================================
+
+    function actualizarBloqueoScroll() {
+
+        const hayModal =
+            document.querySelector(
+                ".modal.activo"
+            );
+
+
+        document.body.style.overflow =
+            hayModal
+                ? "hidden"
+                : "";
+
+    }
+
+
+    const observer =
+        new MutationObserver(
+            actualizarBloqueoScroll
+        );
+
+
+    document
+        .querySelectorAll(".modal")
+        .forEach(modal => {
+
+            observer.observe(
+                modal,
+                {
+                    attributes: true,
+                    attributeFilter: [
+                        "class"
+                    ]
+                }
+            );
+
+        });
+
+
+    // ============================================
+    // ANIMACIÓN DE ENTRADA DE PRODUCTOS
+    // ============================================
+
+    const productosAnimados =
+        document.querySelectorAll(
+            ".producto"
+        );
+
+
+    if (
+        "IntersectionObserver"
+        in window
+    ) {
+
+        const observerProductos =
+            new IntersectionObserver(
+                entradas => {
+
+                    entradas.forEach(
+                        entrada => {
+
+                            if (
+                                entrada.isIntersecting
+                            ) {
+
+                                entrada.target
+                                    .classList
+                                    .add(
+                                        "producto-visible"
+                                    );
+
+                                observerProductos
+                                    .unobserve(
+                                        entrada.target
+                                    );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        productosAnimados.forEach(
+            producto => {
+
+                producto.classList.add(
+                    "producto-animable"
+                );
+
+                observerProductos.observe(
+                    producto
+                );
+
+            }
+        );
+
+    }
+
+
+    // ============================================
+    // ANIMACIÓN DE CATEGORÍAS
+    // ============================================
+
+    const categoriasAnimadas =
+        document.querySelectorAll(
+            ".categoria"
+        );
+
+
+    if (
+        "IntersectionObserver"
+        in window
+    ) {
+
+        const observerCategorias =
+            new IntersectionObserver(
+                entradas => {
+
+                    entradas.forEach(
+                        entrada => {
+
+                            if (
+                                entrada.isIntersecting
+                            ) {
+
+                                entrada.target
+                                    .classList
+                                    .add(
+                                        "categoria-visible"
+                                    );
+
+                                observerCategorias
+                                    .unobserve(
+                                        entrada.target
+                                    );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        categoriasAnimadas.forEach(
+            categoria => {
+
+                categoria.classList.add(
+                    "categoria-animable"
+                );
+
+                observerCategorias.observe(
+                    categoria
+                );
+
+            }
+        );
+
+    }
+
+
+    // ============================================
+    // BOTONES CON EFECTO DE CLIC
+    // ============================================
+
+    document
+        .querySelectorAll(
+            "button, .boton-principal, .categoria"
+        )
+        .forEach(elemento => {
+
+            elemento.addEventListener(
+                "click",
+                () => {
+
+                    elemento.classList.add(
+                        "clic-animado"
+                    );
+
+
+                    setTimeout(
+                        () => {
+
+                            elemento.classList.remove(
+                                "clic-animado"
+                            );
+
+                        },
+                        250
+                    );
+
+                }
+            );
+
+        });
+
+
+    // ============================================
+    // DETECTAR IMÁGENES QUE NO CARGUEN
+    // ============================================
+
+    document
+        .querySelectorAll(
+            ".producto img"
+        )
+        .forEach(imagen => {
+
+            imagen.addEventListener(
+                "error",
+                () => {
+
+                    imagen.classList.add(
+                        "imagen-error"
+                    );
+
+                }
+            );
+
+        });
 
 
     // ============================================
