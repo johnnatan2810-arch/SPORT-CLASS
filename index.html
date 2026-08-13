@@ -28,6 +28,7 @@
         <a href="#catalogo">CATÁLOGO</a>
         <a href="#productos">CAMISETAS</a>
         <a href="#guayos">GUAYOS</a>
+        <a href="#clientes">CLIENTES</a>
 
         <button
             class="boton-carrito"
@@ -1699,6 +1700,8 @@
 
                 </div>
 
+            </div>
+
 
                 <div class="producto" data-categoria="retro" data-precio="85000" data-mayoreo="40000">
 
@@ -1792,9 +1795,6 @@
                     </button>
 
                 </div>
-
-            </div>
-
         </div>
 
     </div>
@@ -2316,6 +2316,146 @@
 
 </div>
 
+
+
+<!-- =========================================================
+     CLIENTES SATISFECHOS
+========================================================= -->
+
+<section class="seccion clientes-seccion" id="clientes">
+
+    <div class="contenedor">
+
+        <span class="etiqueta">SPORT CLASS</span>
+
+        <h2>
+            CLIENTES <span>SATISFECHOS</span>
+        </h2>
+
+        <p class="subtitulo-clientes">
+            Gracias por confiar en Sport Class y llevar nuestra pasión por el fútbol.
+        </p>
+
+        <div class="clientes-collage">
+
+            <div class="cliente-foto"><img src="cliente-01.jpeg" alt="Cliente Sport Class 1" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-02.jpeg" alt="Cliente Sport Class 2" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-03.jpeg" alt="Cliente Sport Class 3" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-04.jpeg" alt="Cliente Sport Class 4" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-05.jpeg" alt="Cliente Sport Class 5" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-06.jpeg" alt="Cliente Sport Class 6" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-07.jpeg" alt="Cliente Sport Class 7" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-08.jpeg" alt="Cliente Sport Class 8" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-09.jpeg" alt="Cliente Sport Class 9" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-10.jpeg" alt="Cliente Sport Class 10" loading="lazy"></div>
+            <div class="cliente-foto"><img src="cliente-11.jpeg" alt="Cliente Sport Class 11" loading="lazy"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+.clientes-seccion {
+    background: #03070d;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.clientes-seccion h2 {
+    margin: 0 0 12px;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(42px, 5vw, 65px);
+    font-style: italic;
+    line-height: .95;
+    text-transform: uppercase;
+}
+
+.clientes-seccion h2 span {
+    color: var(--azul);
+}
+
+.subtitulo-clientes {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #aeb8c6;
+    font-size: 15px;
+}
+
+.clientes-collage {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.cliente-foto {
+    position: relative;
+    overflow: hidden;
+    min-height: 210px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+    background: #070e18;
+    box-shadow: 0 12px 35px rgba(0,0,0,.22);
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.cliente-foto:nth-child(3n + 1) {
+    transform: translateY(8px);
+}
+
+.cliente-foto:nth-child(3n + 2) {
+    transform: translateY(-4px);
+}
+
+.cliente-foto:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: rgba(20,115,255,.65);
+    box-shadow: 0 16px 40px rgba(20,115,255,.12);
+    z-index: 2;
+}
+
+.cliente-foto img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .clientes-collage {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .clientes-collage {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .cliente-foto {
+        min-height: 0;
+    }
+
+    .cliente-foto img {
+        height: 210px;
+    }
+}
+
+@media (max-width: 380px) {
+    .clientes-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .cliente-foto img {
+        height: 280px;
+    }
+}
+</style>
 
 <!-- =========================================================
      FOOTER
