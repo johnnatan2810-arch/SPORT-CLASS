@@ -2402,10 +2402,9 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
+            <option value="3XL">3XL</option>
 
-        
-<option value="3XL">3XL</option>
-</select>
+        </select>
 
         <label for="cantidad-producto">
             Cantidad de unidades
@@ -2865,6 +2864,35 @@ document.addEventListener("DOMContentLoaded", function () {
     let carrito = [];
     let productoSeleccionado = null;
 
+    // Las camisetas usan tallas de ropa; los guayos usan tallas de calzado.
+    const tallasCamiseta = [
+        ["", "Seleccionar talla"],
+        ["S", "S"], ["M", "M"], ["L", "L"],
+        ["XL", "XL"], ["XXL", "XXL"], ["3XL", "3XL"]
+    ];
+
+    const tallasGuayos = [
+        ["", "Seleccionar talla"],
+        ["38", "38"], ["39", "39"], ["40", "40"],
+        ["41", "41"], ["42", "42"], ["43", "43"],
+        ["44", "44"], ["45", "45"]
+    ];
+
+    function cargarTallas(producto) {
+        const opciones = producto.dataset.categoria === "guayos"
+            ? tallasGuayos
+            : tallasCamiseta;
+
+        talla.innerHTML = "";
+        opciones.forEach(function (opcion) {
+            const option = document.createElement("option");
+            option.value = opcion[0];
+            option.textContent = opcion[1];
+            talla.appendChild(option);
+        });
+        talla.value = "";
+    }
+
     function precioVisible(producto) {
         const texto = producto.querySelector(".precio")?.textContent || "";
         const limpio = texto.replace(/[^\d]/g, "");
@@ -2892,6 +2920,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 precio: precio,
                 imagen: imagen
             };
+
+            cargarTallas(producto);
 
             productoImagen.src = imagen;
             productoImagen.alt = nombre;
